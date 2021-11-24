@@ -20,7 +20,7 @@ const MyCryptoBoyNFTDetails = (props) => {
       </p>
       <p>
         <span className="font-weight-bold">Price</span> :{" "}
-        {window.web3.utils.fromWei(price.toString(), "Ether")} Ξ
+        {window.web3.utils.fromWei(price.toString(), "Ether")} C4EI
       </p>
       <p>
         <span className="font-weight-bold">No. of Transfers</span> :{" "}

@@ -1,0 +1,82 @@
+dev@ubuntu:~/www/nft.c4ei.net$ truffle compile
+
+Compiling your contracts...
+===========================
+✔ Fetching solc version list from solc-bin. Attempt #1
+> Compiling ./src/contracts/CryptoBoys.sol
+> Compiling ./src/contracts/ERC721.sol
+> Compiling ./src/contracts/Migrations.sol
+> Artifacts written to /home/dev/www/nft.c4ei.net/src/abis
+> Compiled successfully using:
+   - solc: 0.7.6+commit.7338295f.Emscripten.clang
+
+dev@ubuntu:~/www/nft.c4ei.net$ truffle migrate
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+
+Starting migrations...
+======================
+> Network name:    'development'
+> Network id:      21004
+> Block gas limit: 8000000 (0x7a1200)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0xbb48d22b559f8c2c3c093e822e604c9736e6f6ad506a6893c27ad6fc7890ca4a
+   > Blocks: 0            Seconds: 0
+   > contract address:    0xE1763B2c3367975563c2cdc95ab585c005004C8F
+   > block number:        187718
+   > block timestamp:     1637479042
+   > account:             0xAd70df6Bd78734721F42CD8cCACe42b25D83Aa65
+   > balance:             83066749710629896.055646685267521536
+   > gas used:            220011 (0x35b6b)
+   > gas price:           1 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000220011 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.000220011 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Replacing 'CryptoBoys'
+   ----------------------
+   > transaction hash:    0x7f29f6cf409e3a8fa3fd8820867f8807c13cb00541e96bd5e769640b5375f9a6
+   > Blocks: 0            Seconds: 12
+   > contract address:    0xEAD262b2dFEf461CF1C5Ff003fd59DDA82f7Eaa3
+   > block number:        187720
+   > block timestamp:     1637479066
+   > account:             0xAd70df6Bd78734721F42CD8cCACe42b25D83Aa65
+   > balance:             83066749710629900.055646685267521536
+   > gas used:            4394474 (0x430dea)
+   > gas price:           1 gwei
+   > value sent:          0 ETH
+   > total cost:          0.004394474 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:         0.004394474 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.004614485 ETH
+
+
+dev@ubuntu:~/www/nft.c4ei.net$ 

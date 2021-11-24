@@ -1,5 +1,5 @@
 import React from "react";
-import icon from "./favicon-32x32.png";
+import icon from "./c4eix64t.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="container">
         <img src={icon} alt="" />
         <Link to="/" className="navbar-brand ml-2">
-          NFT's
+          NFT.C4EI.NET
         </Link>
         <button
           className="navbar-toggler"

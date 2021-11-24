@@ -57,7 +57,7 @@ class FormAndPreview extends Component {
       <div>
         <div className="card mt-1">
           <div className="card-body align-items-center d-flex justify-content-center">
-            <h5>Color Your Crypto Boy As You Want It To be!</h5>
+            <h5>Color Your NFT As You Want It To be!</h5>
           </div>
         </div>
         <form onSubmit={this.callMintMyNFTFromApp} className="pt-4 mt-1">
@@ -250,9 +250,11 @@ class FormAndPreview extends Component {
                 />
               </div>
             </div>
+{/* #################### image #################### */}
             <div className="col-md-6 d-flex justify-content-center align-items-center">
               <CryptoBoyNFTImage colors={this.state.userSelectedColors[0]} />
             </div>
+{/* #################### image #################### */}
           </div>
           <div className="row">
             <div className="col-md-3">
@@ -426,7 +428,7 @@ class FormAndPreview extends Component {
                   type="text"
                   value={this.state.cryptoBoyName}
                   className="form-control"
-                  placeholder="Enter Your Crypto Boy's Name"
+                  placeholder="Enter Your NFT Name"
                   onChange={(e) =>
                     this.setState({ cryptoBoyName: e.target.value })
                   }
@@ -441,7 +443,7 @@ class FormAndPreview extends Component {
                   id="cryptoBoyPrice"
                   value={this.state.cryptoBoyPrice}
                   className="form-control"
-                  placeholder="Enter Price In Ξ"
+                  placeholder="Enter Price In C4EI"
                   onChange={(e) =>
                     this.setState({ cryptoBoyPrice: e.target.value })
                   }
@@ -453,7 +455,7 @@ class FormAndPreview extends Component {
                 type="submit"
                 className="btn mt-4 btn-block btn-outline-primary"
               >
-                Mint My Crypto Boy
+                Mint My NFT
               </button>
               <div className="mt-4">
                 {this.props.nameIsUsed ? (

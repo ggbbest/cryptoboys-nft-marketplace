@@ -1,10 +1,39 @@
-# Crypto Boy NFT Marketplace
-<i>NFT marketplace DApp where users mint ERC721 implemented Crypto Boy NFTs.</i>
+nvm install 16.13.0
+npm install
+
+cd ~/www/nft.c4ei.net
+truffle compile
+dev@ubuntu:~/www/nft.c4ei.net$ truffle compile
+
+Compiling your contracts...
+===========================
+✔ Fetching solc version list from solc-bin. Attempt #1
+✔ Fetching solc version list from solc-bin. Attempt #1
+✔ Downloading compiler. Attempt #1.
+> Compiling ./src/contracts/ERC721.sol
+> Compiling ./src/contracts/Migrations.sol
+> Compiling ./src/contracts/NftC4eiNets.sol
+> Artifacts written to /home/dev/www/nft.c4ei.net/src/abis
+> Compiled successfully using:
+   - solc: 0.7.6+commit.7338295f.Emscripten.clang
+
+
+truffle migrate
+personal.unlockAccount("<account_address>")
+
+
+truffle test
+
+npm start
+npm update
+
+# Nftc4eiNet NFT Marketplace
+<i>NFT marketplace DApp where users mint ERC721 implemented Nftc4eiNet NFTs.</i>
 #
 <img align="right" width="350" src="./image.png"></img>
 ### Features
-- Mint custom ERC721 implemented Crypto Boy Tokens.
-- Sell Crypto Boy tokens on the marketplace.
+- Mint custom ERC721 implemented Nftc4eiNet Tokens.
+- Sell Nftc4eiNet tokens on the marketplace.
 - Set desired token price.
 - Toggle between keeping the token for sale and not for sale.
 - Keeps track of all the tokens owned by an account - minted and bought.
@@ -20,11 +49,11 @@
 - [Ganache](https://www.trufflesuite.com/ganache) - Personal blockchain for Ethereum development used to deploy contracts, develop DApps, and run tests.
 #
 ### Interact with the deployed DApp
-- Crypto Boy Marketplace DApp requires [Metamask](https://metamask.io/) browser wallet extension to interact with.
+- Nftc4eiNet Marketplace DApp requires [Metamask](https://metamask.io/) browser wallet extension to interact with.
 - Connect metamask browser wallet to Kovan Test Network.
 - Request and get test etheres for the metamask account from [Kovan Faucet](https://gitter.im/kovan-testnet/faucet) to make transactions.
-- Crypto Boy Marketplace Smart Contract is deployed to Kovan Testnet - [0x420d2a6E87D87992EB01e5BFe762B3F437dBfD85](https://kovan.etherscan.io/address/0x420d2a6e87d87992eb01e5bfe762b3f437dbfd85)
-- Access Crypto Boy Marketplace DApp at [cryptoboys-NFT-marketplace](https://devpavan04.github.io/cryptoboys-nft-marketplace/) and start minting your Crypto Boys.
+- Nftc4eiNet Marketplace Smart Contract is deployed to Kovan Testnet - [0x420d2a6E87D87992EB01e5BFe762B3F437dBfD85](https://kovan.etherscan.io/address/0x420d2a6e87d87992eb01e5bfe762b3f437dbfd85)
+- Access Nftc4eiNet Marketplace DApp at [nftc4einets-NFT-marketplace](https://devpavan04.github.io/nftc4einets-nft-marketplace/) and start minting your Nftc4eiNets.
 #
 ### Run the DApp Locally
 #### Install truffle
@@ -41,11 +70,11 @@ ganache-cli --port 7545
 ```
 #### Open new terminal window and clone this repository
 ```
-git clone https://github.com/devpavan04/cryptoboys-NFT-marketplace.git
+git clone https://github.com/ggbbest/cryptoboys-nft-marketplace.git
 ```
 #### Install dependencies
 ```
-cd cryptoboys-NFT-marketplace
+cd nft.c4ei.net
 npm install
 ```
 #### Compile smart contract
